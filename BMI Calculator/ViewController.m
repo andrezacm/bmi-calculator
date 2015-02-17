@@ -24,4 +24,22 @@
   // Dispose of any resources that can be recreated.
 }
 
+- (void)dealloc {
+  [_height release];
+  [_weight release];
+  [_heighMeasureType release];
+  [_weightMeasureType release];
+  [super dealloc];
+}
+
+- (IBAction)switch:(id)sender {
+  if ([sender isOn]) {
+    _heighMeasureType.text  = @"cm";
+    _weightMeasureType.text = @"kg";
+  } else {
+    _heighMeasureType.text  = @"in";
+    _weightMeasureType.text = @"lbs";
+  }
+}
+
 @end

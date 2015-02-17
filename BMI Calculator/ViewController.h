@@ -10,6 +10,13 @@
 
 @interface ViewController : UIViewController
 
+@property (retain, nonatomic) IBOutlet UITextField *height;
+@property (retain, nonatomic) IBOutlet UITextField *weight;
+@property (retain, nonatomic) IBOutlet UILabel *heighMeasureType;
+@property (retain, nonatomic) IBOutlet UILabel *weightMeasureType;
+
+- (IBAction)switch:(id)sender;
+
 
 @end
 
