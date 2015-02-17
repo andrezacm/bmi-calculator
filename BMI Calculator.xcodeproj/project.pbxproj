@@ -14,6 +14,7 @@
 		5773C0051A92CD9000F2602B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5773C0041A92CD9000F2602B /* Images.xcassets */; };
 		5773C0081A92CD9000F2602B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5773C0061A92CD9000F2602B /* LaunchScreen.xib */; };
 		5773C0141A92CD9000F2602B /* BMI_CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5773C0131A92CD9000F2602B /* BMI_CalculatorTests.m */; };
+		5773C01F1A92D34B00F2602B /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 5773C01E1A92D34B00F2602B /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		5773C00D1A92CD9000F2602B /* BMI CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BMI CalculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5773C0121A92CD9000F2602B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5773C0131A92CD9000F2602B /* BMI_CalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMI_CalculatorTests.m; sourceTree = "<group>"; };
+		5773C01D1A92D33800F2602B /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		5773C01E1A92D34B00F2602B /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				5773C0041A92CD9000F2602B /* Images.xcassets */,
 				5773C0061A92CD9000F2602B /* LaunchScreen.xib */,
 				5773BFF71A92CD9000F2602B /* Supporting Files */,
+				5773C01D1A92D33800F2602B /* Person.h */,
+				5773C01E1A92D34B00F2602B /* Person.m */,
 			);
 			path = "BMI Calculator";
 			sourceTree = "<group>";
@@ -221,6 +226,7 @@
 			files = (
 				5773C0001A92CD9000F2602B /* ViewController.m in Sources */,
 				5773BFFD1A92CD9000F2602B /* AppDelegate.m in Sources */,
+				5773C01F1A92D34B00F2602B /* Person.m in Sources */,
 				5773BFFA1A92CD9000F2602B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
