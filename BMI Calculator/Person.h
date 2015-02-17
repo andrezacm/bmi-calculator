@@ -12,7 +12,10 @@
   @property(retain, nonatomic) NSNumber * height;
   @property(readonly)          NSNumber * bmi;
 
-
   -(NSNumber *)bmi;
+  -(NSNumber *)weight;
+  -(NSNumber *)height;
+  -(void)setHeight:(NSNumber *)h;
+  -(void)setWeight:(NSNumber *)w;
 
 @end

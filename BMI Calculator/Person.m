@@ -21,4 +21,28 @@
   return [NSNumber numberWithFloat:bmi];
 }
 
+-(NSNumber *)height {
+  return height;
+}
+
+-(NSNumber *)weight {
+  return weight;
+}
+
+-(void)setHeight:(NSNumber *)h {
+  if (height != h) {
+    NSNumber * temp = height;
+    height = [h retain];
+    [temp release];
+  }
+}
+
+-(void)setWeight:(NSNumber *)w {
+  if (weight != w) {
+    NSNumber * temp = weight;
+    weight = [w retain];
+    [temp release];
+  }
+}
+
 @end
