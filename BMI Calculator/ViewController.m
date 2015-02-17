@@ -14,8 +14,11 @@
 
 @implementation ViewController
 
+bool switchCmOn;
+
 - (void)viewDidLoad {
   [super viewDidLoad];
+  switchCmOn = YES;
   // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -44,21 +47,39 @@
 
 // Switch labels of measure type of height and weight
 - (IBAction)switch:(id)sender {
+  float tempH = [_height.text floatValue];
+  float tempW = [_weight.text floatValue];
+  
   if ([sender isOn]) {
     _heighMeasureType.text  = @"cm";
     _weightMeasureType.text = @"kg";
+    _height.text = [NSString stringWithFormat:@"%.02f", [self inTocm:tempH]];
+    _weight.text = [NSString stringWithFormat:@"%.02f", [self lbsTokg:tempW]];
+    switchCmOn = YES;
   } else {
     _heighMeasureType.text  = @"in";
     _weightMeasureType.text = @"lbs";
+    _height.text = [NSString stringWithFormat:@"%.02f", [self cmToin:tempH]];
+    _weight.text = [NSString stringWithFormat:@"%.02f", [self kgTolbs:tempW]];
+    switchCmOn = NO;
   }
 }
 
 //Calculate BMI
 - (IBAction)calculateBMI:(id)sender {
-  float h = ([_height.text floatValue] / 100);
+  float h = [_height.text floatValue];
   float w = [_weight.text floatValue];
-  float result = (w/(h*h));
-  _response.text = [[[NSNumber numberWithFloat:result] stringValue] retain];
+  
+  if (!switchCmOn) {
+    float heightInCm = [self inTocm:h];
+    float weightInKg = [self lbsTokg:w];
+    h = heightInCm;
+    w = weightInKg;
+  }
+  
+  float heightInM = (h / 100);
+  float result = (w / (heightInM * heightInM));
+  _response.text = [NSString stringWithFormat:@"%.02f", result];
   [self checkCategory:result];
 }
 
@@ -96,6 +117,23 @@
     _responseCategory.text = @"Obese Class III";
     [_image setImage:[UIImage imageNamed: @"8.png"]];
   }
+}
+
+//convertions
+- (float)cmToin:(float)cm{
+  return (cm * 0.39);
+}
+
+- (float)inTocm:(float)inc{
+  return (inc * 2.54);
+}
+
+- (float)kgTolbs:(float)kg{
+  return (kg * 2.2);
+}
+
+- (float)lbsTokg:(float)lbs{
+  return (lbs / 2.2);
 }
 
 @end
