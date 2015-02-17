@@ -14,4 +14,11 @@
   @synthesize weight;
   @synthesize height;
 
+-(NSNumber *)bmi {
+  float h   = self.height.floatValue;
+  float w   = self.weight.floatValue;
+  float bmi = w/(h*h);
+  return [NSNumber numberWithFloat:bmi];
+}
+
 @end
