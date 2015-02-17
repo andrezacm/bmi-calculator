@@ -50,8 +50,10 @@
 }
 
 - (IBAction)calculateBMI:(id)sender {
-  float temp = [_height.text floatValue] + [_weight.text floatValue];
-  _response.text = [[NSNumber numberWithFloat:temp] stringValue];
+  float h = [_height.text floatValue];
+  float w = [_weight.text floatValue];
+  float result = (w/(h*h));
+  _response.text = [[[NSNumber numberWithFloat:result] stringValue] retain];
 }
 
 @end
