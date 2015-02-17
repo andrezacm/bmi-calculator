@@ -53,6 +53,7 @@
   }
 }
 
+//Calculate BMI
 - (IBAction)calculateBMI:(id)sender {
   float h = ([_height.text floatValue] / 100);
   float w = [_weight.text floatValue];
@@ -61,6 +62,7 @@
   [self checkCategory:result];
 }
 
+//Change Image and label of response
 - (void)checkCategory:(float)bmi {
   if (bmi < 16){
     _responseCategory.text = @"Severe Thinness";
