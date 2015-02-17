@@ -77,24 +77,36 @@
                                     <rect key="frame" x="16" y="334" width="240" height="128"/>
                                 </variation>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O69-5t-Nqt">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="254" width="240" height="72"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="62C-U0-oVi"/>
+                                <exclude reference="O69-5t-Nqt"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="62C-U0-oVi"/>
+                                <include reference="O69-5t-Nqt"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="heighMeasureType" destination="L12-l4-5Vs" id="vZA-oo-ExA"/>
                         <outlet property="height" destination="wgQ-Hy-kXm" id="GWw-wh-RTZ"/>
-                        <outlet property="image" destination="62C-U0-oVi" id="5TB-f0-dH3"/>
-                        <outlet property="response" destination="M0Q-8g-PjY" id="y1F-nB-aFO"/>
+                        <outlet property="image" destination="62C-U0-oVi" id="gxJ-hk-NVo"/>
+                        <outlet property="response" destination="O69-5t-Nqt" id="5nx-l2-ziW"/>
+                        <outlet property="responseCategory" destination="O69-5t-Nqt" id="8ao-0H-mRE"/>
                         <outlet property="weight" destination="myV-K9-t2r" id="uRU-91-OHY"/>
                         <outlet property="weightMeasureType" destination="yxA-vQ-jHZ" id="2gP-aG-VfO"/>
                     </connections>
