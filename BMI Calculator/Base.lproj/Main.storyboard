@@ -71,12 +71,29 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="62C-U0-oVi">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="334" width="240" height="128"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="62C-U0-oVi"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="62C-U0-oVi"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="heighMeasureType" destination="L12-l4-5Vs" id="vZA-oo-ExA"/>
                         <outlet property="height" destination="wgQ-Hy-kXm" id="GWw-wh-RTZ"/>
+                        <outlet property="image" destination="62C-U0-oVi" id="5TB-f0-dH3"/>
                         <outlet property="response" destination="M0Q-8g-PjY" id="y1F-nB-aFO"/>
                         <outlet property="weight" destination="myV-K9-t2r" id="uRU-91-OHY"/>
                         <outlet property="weightMeasureType" destination="yxA-vQ-jHZ" id="2gP-aG-VfO"/>

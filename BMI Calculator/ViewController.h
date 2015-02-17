@@ -15,6 +15,7 @@
 @property (retain, nonatomic) IBOutlet UILabel *heighMeasureType;
 @property (retain, nonatomic) IBOutlet UILabel *weightMeasureType;
 @property (retain, nonatomic) IBOutlet UILabel *response;
+@property (retain, nonatomic) IBOutlet UIImageView *image;
 
 - (IBAction)switch:(id)sender;
 - (IBAction)calculateBMI:(id)sender;

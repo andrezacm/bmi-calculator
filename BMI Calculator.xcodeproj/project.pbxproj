@@ -15,6 +15,14 @@
 		5773C0081A92CD9000F2602B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5773C0061A92CD9000F2602B /* LaunchScreen.xib */; };
 		5773C0141A92CD9000F2602B /* BMI_CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5773C0131A92CD9000F2602B /* BMI_CalculatorTests.m */; };
 		5773C01F1A92D34B00F2602B /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 5773C01E1A92D34B00F2602B /* Person.m */; };
+		5773C0281A9338F600F2602B /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5773C0201A9338F600F2602B /* 1.png */; };
+		5773C0291A9338F600F2602B /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5773C0211A9338F600F2602B /* 2.png */; };
+		5773C02A1A9338F600F2602B /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5773C0221A9338F600F2602B /* 3.png */; };
+		5773C02B1A9338F600F2602B /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 5773C0231A9338F600F2602B /* 4.png */; };
+		5773C02C1A9338F600F2602B /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 5773C0241A9338F600F2602B /* 5.png */; };
+		5773C02D1A9338F600F2602B /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 5773C0251A9338F600F2602B /* 6.png */; };
+		5773C02E1A9338F600F2602B /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 5773C0261A9338F600F2602B /* 7.png */; };
+		5773C02F1A9338F600F2602B /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 5773C0271A9338F600F2602B /* 8.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +51,14 @@
 		5773C0131A92CD9000F2602B /* BMI_CalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMI_CalculatorTests.m; sourceTree = "<group>"; };
 		5773C01D1A92D33800F2602B /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		5773C01E1A92D34B00F2602B /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		5773C0201A9338F600F2602B /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		5773C0211A9338F600F2602B /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		5773C0221A9338F600F2602B /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		5773C0231A9338F600F2602B /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		5773C0241A9338F600F2602B /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		5773C0251A9338F600F2602B /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		5773C0261A9338F600F2602B /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
+		5773C0271A9338F600F2602B /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +117,14 @@
 		5773BFF71A92CD9000F2602B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5773C0201A9338F600F2602B /* 1.png */,
+				5773C0211A9338F600F2602B /* 2.png */,
+				5773C0221A9338F600F2602B /* 3.png */,
+				5773C0231A9338F600F2602B /* 4.png */,
+				5773C0241A9338F600F2602B /* 5.png */,
+				5773C0251A9338F600F2602B /* 6.png */,
+				5773C0261A9338F600F2602B /* 7.png */,
+				5773C0271A9338F600F2602B /* 8.png */,
 				5773BFF81A92CD9000F2602B /* Info.plist */,
 				5773BFF91A92CD9000F2602B /* main.m */,
 			);
@@ -204,7 +228,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5773C02F1A9338F600F2602B /* 8.png in Resources */,
 				5773C0031A92CD9000F2602B /* Main.storyboard in Resources */,
+				5773C02B1A9338F600F2602B /* 4.png in Resources */,
+				5773C0281A9338F600F2602B /* 1.png in Resources */,
+				5773C02D1A9338F600F2602B /* 6.png in Resources */,
+				5773C0291A9338F600F2602B /* 2.png in Resources */,
+				5773C02A1A9338F600F2602B /* 3.png in Resources */,
+				5773C02C1A9338F600F2602B /* 5.png in Resources */,
+				5773C02E1A9338F600F2602B /* 7.png in Resources */,
 				5773C0081A92CD9000F2602B /* LaunchScreen.xib in Resources */,
 				5773C0051A92CD9000F2602B /* Images.xcassets in Resources */,
 			);
@@ -420,6 +452,7 @@
 				5773C0191A92CD9000F2602B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5773C01A1A92CD9000F2602B /* Build configuration list for PBXNativeTarget "BMI CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +461,7 @@
 				5773C01C1A92CD9000F2602B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
