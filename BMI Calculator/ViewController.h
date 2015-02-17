@@ -14,8 +14,10 @@
 @property (retain, nonatomic) IBOutlet UITextField *weight;
 @property (retain, nonatomic) IBOutlet UILabel *heighMeasureType;
 @property (retain, nonatomic) IBOutlet UILabel *weightMeasureType;
+@property (retain, nonatomic) IBOutlet UILabel *response;
 
 - (IBAction)switch:(id)sender;
+- (IBAction)calculateBMI:(id)sender;
 
 
 @end
