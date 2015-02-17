@@ -54,11 +54,11 @@
 }
 
 - (IBAction)calculateBMI:(id)sender {
-  float h = [_height.text floatValue];
+  float h = ([_height.text floatValue] / 100);
   float w = [_weight.text floatValue];
-  float result = (w/((h*h)/1000));
+  float result = (w/(h*h));
   _response.text = [[[NSNumber numberWithFloat:result] stringValue] retain];
-  //[self checkCategory:result];
+  [self checkCategory:result];
 }
 
 - (void)checkCategory:(float)bmi {
