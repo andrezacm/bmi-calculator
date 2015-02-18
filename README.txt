@@ -30,3 +30,8 @@ The user must enter the values of height and weight, choose the measurement syst
 
 ##Bugs
 This program just check if the text fields of height and weight are emptys. This program doesn't treat bad inputs like only dots (".") or unreal values such as very big values or very little or negative.
+
+
+###Author
+Andreza da Costa Medeiros
+andreza.cmedeiros@gmail.com
