@@ -35,3 +35,4 @@ This program just check if the text fields of height and weight are emptys. This
 ###Author
 Andreza da Costa Medeiros
 andreza.cmedeiros@gmail.com
+andreza@fullerton.edu
