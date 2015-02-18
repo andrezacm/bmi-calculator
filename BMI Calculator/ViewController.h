@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Person.h"
 
 @interface ViewController : UIViewController
 
@@ -17,6 +18,8 @@
 @property (retain, nonatomic) IBOutlet UILabel *response;
 @property (retain, nonatomic) IBOutlet UIImageView *image;
 @property (retain, nonatomic) IBOutlet UILabel *responseCategory;
+
+@property (retain) Person * person;
 
 - (IBAction)switch:(id)sender;
 - (IBAction)calculateBMI:(id)sender;

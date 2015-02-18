@@ -6,16 +6,21 @@
 //  Copyright (c) 2015 Andreza da Costa Medeiros. All rights reserved.
 //
 
+enum systemOfMeasurements {metric, us};
+
 @interface Person : NSObject
 
   @property(retain, nonatomic) NSNumber * weight;
   @property(retain, nonatomic) NSNumber * height;
-  @property(readonly)          NSNumber * bmi;
+  @property(readonly) enum systemOfMeasurements measurement;
 
+  +(Person   *)initialize;
   -(NSNumber *)bmi;
   -(NSNumber *)weight;
   -(NSNumber *)height;
   -(void)setHeight:(NSNumber *)h;
   -(void)setWeight:(NSNumber *)w;
+  -(void)changeMeasurementToMetric;
+  -(void)changeMeasurementToUS;
 
 @end
